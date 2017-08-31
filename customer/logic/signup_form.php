@@ -30,12 +30,12 @@
 		mail($_POST['email'],"Welcome to JustinCase stationary",$msg,$headers);
 		
 		$newUserObj = (object)array("type" => "userinfo", "username" => $username, "email" => $email, "password" => $password);
-		//$sql = "INSERT INTO customer_info VALUES(NULL, '".$username."', '".$email."', '".$password."',0)";
+		$sql = "INSERT INTO customer_info VALUES(NULL, '".$username."', '".$email."', '".$password."',0)";
 
-		//if ($conn->query($sql)) {
+		if ($conn->query($sql)) {
 			$_SESSION["user"] = json_encode($newUserObj);
 			header("Location: http://localhost/PlainJavascript/#signup_confirm"); /* Redirect browser */
-		//}
+		}
 		$conn->close();
 	}
 ?>
