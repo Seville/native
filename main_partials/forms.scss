@@ -1,0 +1,13 @@
+.input-box {
+	margin-bottom: 10px;
+	label {
+		display: block;
+		margin: 0;
+	}
+	input {
+		width: 40%;
+		&#submit {
+			width: auto;
+		}
+	}
+}

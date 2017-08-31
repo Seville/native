@@ -1,0 +1,19 @@
+nav {
+	font-size: 12px;
+	background: #7EC0EE url('imgs/swirl_pattern.png');
+}
+ul {
+	&.footer-nav {
+		list-style-type: none;
+		h3 {
+			font-size: 18px;
+		}
+		li a{
+			color: #000;
+		}
+	}
+}
+.center-row {
+	width: 850px;
+	margin: auto;
+}

@@ -1,0 +1,34 @@
+.banner {
+	background: #7EC0EE url('imgs/swirl_pattern.png');
+}
+.logo {
+	height: 60px;
+}
+.main-title {
+    font-size: 23px;
+	color: black;
+	h2 {
+		margin: 14px 0;
+	}
+	&:hover {
+		text-decoration: none;
+		color: #000;
+	}
+}
+.search {
+	font-size: 15px;
+	input {
+		padding-left: 5px;
+		@include prefx-border-radius(3px);
+		border: 1px solid #707070;
+		width: 80%;
+	}
+}
+.signup {
+	color: #000;
+    margin-top: 20px;
+    display: inline-block;
+	a {
+		color: #000;
+	}
+}
